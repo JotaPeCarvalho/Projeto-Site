@@ -1,0 +1,341 @@
+html{
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+
+.title{
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: var(--medium);
+    font-weight: 400;
+}
+
+body, html{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header .active{
+    position: fixed;
+    background: white;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2)
+}
+
+header .navbar-collapse{
+    width: auto;
+}
+
+  /* Configurações do NAV */
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: solid 4px transparent;
+    margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+}
+
+  /* Configurações doS botões (slide) */
+
+.button{
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+/* Configurações do slider */
+
+#slider{
+    background: url(img/slider-bg.svg) no-repeat center bottom;
+    background-size: contain;
+}
+
+#slider h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#slider h4{
+   font-size:18px;
+   text-transform: uppercase;
+}
+
+/* Configurações da pag sobre */
+
+#sobre h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sobre h4{
+    
+    font-weight: 400;
+    color: var(--medium);
+}
+
+.block{
+    margin-bottom: 120px;
+}
+
+/* Serviços */
+
+#servicos a.destaque{
+    display: block;
+    background-color: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover{
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
+}
+
+#servicos p{
+    color: #a2a2a2;
+}
+
+#servicos a.destaque .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#servicos a.destaque .img-container img{
+    max-height: 160px;
+}
+
+/* Clientes */
+
+#clientes a.link-cliente {
+    padding: 0 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--light);
+    height: 100px;
+    transition: ease-out all 0.2s;
+}
+
+#clientes a.link-cliente:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clientes a.link-cliente img{
+    filter: grayscale(100%);
+    max-height: 70px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#clientes a.link-cliente img:hover{
+    filter: grayscale(0%);
+    max-height: 70px;
+    width: 100%;
+    opacity: 1;
+}
+
+#clientes .cliente-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--light);
+}
+
+#clientes .cliente-texto .imagem {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    color: #b4b4b4;
+    font-size: 24;
+    line-height: 26px;
+}
+
+#clientes .cliente-texto .imagem span{
+    color: var(--secondary);
+    font-size: 110px;
+    line-height: 110px;
+    letter-spacing: -10px;
+    font-weight: 900;
+    display: block;
+}
+
+#clientes .cliente-texto .telefone {
+    display: flex;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+#clientes .cliente-texto .telefone span{
+    font-size: 25px;
+    color: #797979;
+    font-weight: 900;
+    display: block;
+}
+/* Serviços */ 
+
+#servicos .badge{
+    font-weight: 400;
+}
+
+#servicos .element-item img{
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+
+}
+
+#servicos .element-item img:hover{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+    
+}
+
+#servicos .button-group{
+    margin-bottom: 30px;
+}
+
+#servicos .button-group button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+}
+
+#servicos .button-group button + button{
+    margin-left: 30px;
+
+}
+
+#servicos .button-group button.active{
+    color: #FC5185;
+}
+
+/* Depoimentos */
+
+#depoimentos .depoimento{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    padding: 30px;
+}
+
+#depoimentos .depoimento .quote{
+    max-width: 35px;
+}
+
+#depoimentos .depoimento .name{
+    color: #aaaaaa;
+}
+
+#depoimentos .depoimento .name span{
+    color: black;
+
+font-weight: 700;
+}
+
+#depoimentos .icone-prev{
+    margin-left: -200px;
+    
+}
+
+#depoimentos .icone-next{
+    margin-right: -200px;
+    
+}
+
+/*Contato*/
+
+#contato .email{
+    border-radius: 5px;
+    background-color: #364f6b;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#contato .email img{
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+#contato .email form{
+    width: 60%;
+    display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder{
+    background: none;
+    color: white;
+}
+
+#contato ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contato ul li{
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+#contato ul li:first-child{
+    margin-left: 0;
+}
+
+#contato ul li a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: white;
+    transform: scale(1.2);
+
+}
+
+
+
